@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Order</title>
+   <style>
+    body {
+        font-family: Arial;
+        background: #121212;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    form {
+        background: #1e1e1e;
+        display: inline-block;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    input, select {
+        width: 220px;
+        padding: 10px;
+        margin: 6px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    button {
+        padding: 10px 25px;
+        background: #00c853;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #00a844;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1>🍔 Food Ordering System</h1>
+
+    <form method="POST">
+        <input name="name" placeholder="Your Name" required><br><br>
+        <input name="phone" placeholder="Phone Number" required><br><br>
+
+        <select name="order">
+            <option>Pizza</option>
+            <option>Burger</option>
+            <option>Cola</option>
+        </select><br><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
